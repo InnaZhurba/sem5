@@ -19,6 +19,6 @@ class FlowerBucketTest {
 
     @Test
     void getPrice() {
-        assertEquals(190,flowerPack.getPrice());
+        assertEquals(19,flowerPack.getPrice());
     }
 }
