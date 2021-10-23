@@ -3,7 +3,7 @@ name: Java CI
 on: [push]
 
 jobs:
-  test:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -13,5 +13,5 @@ jobs:
         with:
           java-version: '17'
           distribution: 'adopt'
-      - name: Test with Maven
+      - name: Build with Maven
         run: mvn --batch-mode --update-snapshots verify
