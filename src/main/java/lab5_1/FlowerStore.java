@@ -1,9 +1,16 @@
 package lab5_1;
 
-public class FlowerStore {
-    FlowerBucket bucket = new FlowerBucket();
+import java.sql.Array;
+import java.util.ArrayList;
 
-    public void search(){
-        
+public class FlowerStore {
+    ArrayList<FlowerBucket> bucket = new ArrayList<>();
+
+    public FlowerBucket search(Flower flower){
+        for(FlowerBucket fb: bucket){
+           if(fb.hasFlower(flower))
+               return fb;
+        }
+        return null;
     }
 }
