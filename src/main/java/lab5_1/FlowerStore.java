@@ -3,7 +3,6 @@ package lab5_1;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.sql.Array;
 import java.util.ArrayList;
 
 public class FlowerStore {
@@ -17,4 +16,14 @@ public class FlowerStore {
         }
         return null;
     }
+
+    /*@Override
+    public void CreditCardPaymentStrategy(double price) {
+        System.out.println("Pay by credit card: "+price);
+    }
+
+    @Override
+    public void PayPalPaymentStrategy(double price) {
+        System.out.println("Pay by PayPal: "+price);
+    }*/
 }

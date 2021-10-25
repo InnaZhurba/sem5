@@ -7,7 +7,7 @@ import lombok.ToString;
 import java.util.Arrays;
 
 @ToString
-public class Flower {
+public class Flower extends Items {
     @Getter @Setter
     byte[] color = new byte[3];
     @Getter @Setter
@@ -25,5 +25,15 @@ public class Flower {
 
     public Flower(FlowerType type){
         this.Type = type;
+    }
+
+    @Override
+    public double price() {
+        return getPrice();
+    }
+
+    @Override
+    public String getDescription() {
+        return null;
     }
 }

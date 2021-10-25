@@ -4,7 +4,7 @@ import lombok.Getter;
 
 import java.util.ArrayList;
 
-public class FlowerBucket {
+public class FlowerBucket extends Items{
     @Getter
     ArrayList<FlowerPack> bucket= new ArrayList<>();
     public void addFlowerPack(FlowerPack flowerPack){
@@ -24,5 +24,15 @@ public class FlowerBucket {
                 return true;
         }
         return false;
+    }
+
+    @Override
+    public double price() {
+        return getPrice();
+    }
+
+    @Override
+    public String getDescription() {
+        return null;
     }
 }
