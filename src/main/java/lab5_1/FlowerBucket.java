@@ -25,6 +25,10 @@ public class FlowerBucket extends Items{
         }
         return false;
     }
+    /*public boolean addFlowers(){
+        bucket.
+        return true;
+    }*/
 
     @Override
     public double price() {

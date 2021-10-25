@@ -1,6 +1,8 @@
-package lab5_1;
+package lab5_1.Decorator;
 
-public class ItemDecorator extends Items{
+import lab5_1.Items;
+
+public class ItemDecorator extends Items {
 
 private Items item;
     public ItemDecorator(Items item){
@@ -11,9 +13,8 @@ private Items item;
     public double price() {
         return item.price();
     }
-
     @Override
     public String getDescription() {
-        return null;
-    }
+        return "Items description";
+    }//items.getDescription();
 }

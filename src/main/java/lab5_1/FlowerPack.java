@@ -10,6 +10,6 @@ public class FlowerPack {
     private int amount;
 
     public double getPrice(){
-        return flower.getPrice()*amount;
+        return (flower.getPrice())*amount;
     }
 }

@@ -34,6 +34,6 @@ public class Flower extends Items {
 
     @Override
     public String getDescription() {
-        return null;
+        return "Flower description";
     }
 }

@@ -1,6 +1,5 @@
 package lab5_1.Decorator;
 
-import lab5_1.ItemDecorator;
 import lab5_1.Items;
 
 public class RibbonDecorator extends ItemDecorator {
